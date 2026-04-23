@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+#foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+}
+
+main {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: #34495e;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+#habilidades {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#habilidades li {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#toggle-habilidades,
+#toggle-educacion {
+    cursor: pointer;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+#toggle-habilidades:hover,
+#toggle-educacion:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.oculto {
+    display: none !important;
+}
+
+.visible {
+    display: block;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #5dade2;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+
+    #habilidades {
+        grid-template-columns: 1fr;
+    }
+
+    footer a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
